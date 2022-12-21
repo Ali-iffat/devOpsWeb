@@ -5,7 +5,6 @@ pipeline {
     tools {
         maven '3.6.3'
     }
-    // ... stages ...///
 }
     parameters {
          string(name: 'staging_server', defaultValue: '44.202.65.218', description: 'Remote Staging Server')
