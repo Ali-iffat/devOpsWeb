@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-        Maven "Maven 3.6.3"
+        maven "3.8.6"
     }
     parameters {
          string(name: 'staging_server', defaultValue: '44.202.65.218', description: 'Remote Staging Server')
