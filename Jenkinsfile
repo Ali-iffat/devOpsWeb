@@ -1,5 +1,5 @@
-pipeline {
-    agent { label 'main' }
+Sawpipeline {
+    agent any
     
 
     tools {
