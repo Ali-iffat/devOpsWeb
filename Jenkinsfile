@@ -1,4 +1,4 @@
-Sawpipeline {
+pipeline {
     agent any
     
 
