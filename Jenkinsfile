@@ -7,7 +7,7 @@ pipeline {
     }
     
     parameters {
-         string(name: 'staging_server', defaultValue: '35.170.182.153', description: 'Remote Staging Server')
+         string(name: 'staging_server', defaultValue: '3.83.46.133', description: 'Remote Staging Server')
     }
 
 stages{
@@ -27,7 +27,7 @@ stages{
             parallel{
                 stage ("Deploy to Staging"){
                     steps {
-                        sh "scp -v -o StrictHostKeyChecking=no **/*.war root@${params.staging_server}:/opt/tomcat/webapps/"
+                        sh "scp -v -o StrictHostKeyChecking=no **/*.war ubuntu@${params.staging_server}:/opt/tomcat/webapps/"
                     }
                 }
             }
