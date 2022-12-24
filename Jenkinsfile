@@ -7,7 +7,7 @@ pipeline {
     }
     
     parameters {
-         string(name: 'staging_server', defaultValue: '18.233.156.160', description: 'Remote Staging Server')
+         string(name: 'staging_server', defaultValue: '172.31.92.101', description: 'Remote Staging Server')
     }
 
 stages{
